@@ -1,0 +1,55 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a routerLink="/menu" class="navbar-brand fw-semibold fs-4">
+      <img src="../../../../assets/img/favicon.ico" alt="" width="40" height="40">
+      Don Taco´s</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="offcanvas"
+      data-bs-target="#menuLateral"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+
+  <section
+    class="offcanvas offcanvas-start bg-dark"
+    id="menuLateral"
+    tabindex="-1"
+  >
+    <div class="offcanvas-header" data-bs-theme="dark">
+      <h5 class="offcanvas-title">Taqueria Don Tacos</h5>
+      <button
+        class="btn-close bg-info"
+        type="button"
+        aria-label="Close"
+        data-bs-dismiss="offcanvas"
+      ></button>
+    </div>
+
+    <!-- Inicio: Enlaces -->
+    <div class="offcanvas-body d-flex flex-column justify-content-between px-0">
+      <ul class="navbar-nav fs-5 justify-content-evenly">
+        <li class="nav-item p-3 py-md-1">
+          <a routerLink="/home" class="nav-link">Inicio</a>
+        </li>
+        <li class="nav-item p-3 py-md-1">
+          <a routerLink="/menu" class="nav-link">Menú</a>
+        </li>
+        <li class="nav-item p-3 py-md-1">
+          <a routerLink="/contacto" class="nav-link">Contacto</a>
+        </li>
+      </ul>
+      <!-- Fin: Enlaces -->
+      <!-- Inicio: Enlaces redes sociales -->
+      <div class="d-lg-none align-self-center py-3">
+        <a href="#"><i class="bi bi-twitter px-2 text-info fs-2"></i></a>
+        <a href="#"><i class="bi bi-facebook px-2 text-info fs-2"></i></a>
+        <a href="#"><i class="bi bi-github px-2 text-info fs-2"></i></a>
+        <a href="#"><i class="bi bi-whatsapp px-2 text-info fs-2"></i></a>
+      </div>
+      <!-- Fin: Enlace redes sociales -->
+    </div>
+  </section>
+</nav>

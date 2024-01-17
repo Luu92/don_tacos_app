@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap");
+
+.offcanvas-header h5 {
+  font-family: "Lobster Two", cursive;
+  color: #fadd00;
+}
+
+.navbar-brand a {
+  font-family: "Lobster Two", cursive;
+  font-size: 30px;
+  color: #fadd00;
+}
+
+.navbar-brand,
+.nav-link {
+  font-family: "Lobster Two", cursive;
+  font-weight: bold;
+  font-size: 20px;
+  color: #fadd00;
+}
+
+nav,
+.offcanvas {
+  background-color: #1e293b;
+}
+.navbar-toggler {
+  border: none;
+}
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+@media (max-width: 768px) {
+  .navbar-nav > li:hover {
+    background-color: #0dcaf0;
+  }
+}

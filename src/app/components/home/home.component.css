@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
+
+.col-right{
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 5fr;
+    background-color: #FADD00;
+    font-family: 'Lobster Two', cursive;
+    padding: 0px;
+    margin-right: 0px;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+    padding: 0px 5px 0px 5px;
+}
+
+.col-right h1 {
+    font-size: 40px;
+    text-decoration: underline;
+}
+
+.col-right p a {
+    font-size: 50px;
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    position: relative;
+}
+
+.col-right p a::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.6s ease-out;
+}
+
+.col-right p a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.bi-arrow-right-circle{
+    font-size: 40px;
+    margin-right: 5px;
+    /* color: white; */
+}
+
+
+/*asczxczxczx*/
+.contenedor{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 0px;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.row{
+    width: 100%;
+    padding: 10px 0px;
+}
+/*dfasdasdasdasd*/
+.fullscreen-container {
+    height: 100vh; /* Establece la altura al 100% del viewport */
+    background-color: white; /* Color de fondo opcional */
+    padding: 20px; /* Espacio interior opcional */
+    display: flex;
+    grid-template-columns: 2fr;
+    gap: 5px;
+}
+
+/* Estilo para la imagen */
+.fullscreen-container img{
+    height: 50%;
+}

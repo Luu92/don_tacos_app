@@ -1,0 +1,10 @@
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed; /* Fija el footer en la parte inferior de la ventana del navegador */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}

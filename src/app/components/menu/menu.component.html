@@ -1,0 +1,142 @@
+<app-navbar></app-navbar>
+
+<div class="container">
+  <!-- Inicio: Titulo seccion 1 -->
+  <div class="row">
+    <div class="col-12 col-md-12 col-lg-12">
+      <div class="section">
+        <h1 class="text-titulo">Tradicionales de la Casa</h1>
+      </div>
+    </div>
+  </div>
+  <!-- Fin: Titulo seccion 1 -->
+  <!-- Inicio: Tarjeta tacos tradicionales de las casa -->
+  <div class="row mt-2">
+    <div
+      *ngFor="let tradicional of tacosTradicionales"
+      class="col-sm-12 col-md-6 col-lg-4"
+    >
+      <div class="card tarjeta">
+        <img
+          src="{{ tradicional.urlImg }}"
+          class="card-img-top"
+          alt="Tacos deliciosos"
+        />
+        <div class="card-body">
+          <h5 class="card-title">{{ tradicional.nombre }}</h5>
+          <p class="card-text">{{ tradicional.descripcion }}</p>
+          <figure class="text-end">
+            <figcaption class="blocquote-footer">
+              <p class="btn btn-primary">$ {{ tradicional.precio }}</p>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Fin: Tarjeta tacos tradicionales de las casa -->
+  <!-- Inicio: Titulo seccion 2 -->
+  <div class="row mt-4">
+    <div class="col-12 col-md-12 col-lg-12">
+      <div class="section">
+        <h1 class="text-titulo">Especiales de la Casa en Harina</h1>
+      </div>
+    </div>
+  </div>
+  <!-- Fin: Titulo seccion 2 -->
+
+  <!-- Inicio: Tarjeta tacos especiales de las casa -->
+  <div class="row mt-2">
+    <div
+      *ngFor="let especial of tacosEspeciales"
+      class="col-sm-12 col-md-6 col-lg-4"
+    >
+      <div class="card tarjeta">
+        <img
+          src="{{ especial.urlImg }}"
+          class="card-img-top"
+          alt="Tacos deliciosos"
+        />
+        <div class="card-body">
+          <h5 class="card-title">{{ especial.nombre }}</h5>
+          <p class="card-text">{{ especial.descripcion }}</p>
+          <figure class="text-end">
+            <figcaption class="blocquote-footer">
+              <p class="btn btn-primary">$ {{ especial.precio }}</p>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Fin: Tarjeta tacos especiales de las casa -->
+
+  <!-- Inicio: Titulo seccion 3 -->
+  <div class="row mt-4">
+    <div class="col-12 col-md-12 col-lg-12">
+      <div class="section">
+        <h1 class="text-titulo">Tortas de la Casa</h1>
+      </div>
+    </div>
+  </div>
+  <!-- Fin: Titulo seccion 3 -->
+
+  <!-- Inicio: Tarjeta tortas -->
+  <div class="row mt-2">
+    <div *ngFor="let torta of tortas" class="col-sm-12 col-md-6 col-lg-4">
+      <div class="card tarjeta">
+        <img
+          src="{{ torta.urlImg }}"
+          class="card-img-top"
+          alt="Tacos deliciosos"
+        />
+        <div class="card-body">
+          <h5 class="card-title">{{ torta.nombre }}</h5>
+          <p class="card-text">{{ torta.descripcion }}</p>
+          <figure class="text-end">
+            <figcaption class="blocquote-footer">
+              <p class="btn btn-primary">$ {{ torta.precio }}</p>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Fin: Tarjeta tortas -->
+  
+  <!-- Inicio: Titulo seccion 3 -->
+  <div class="row mt-4">
+    <div class="col-12 col-md-12 col-lg-12">
+      <div class="section">
+        <h1 class="text-titulo">Alambres de la Casa</h1>
+      </div>
+    </div>
+  </div>
+  <!-- Fin: Titulo seccion 3 -->
+
+  <!-- Inicio: Tarjeta tortas -->
+  <div class="row mt-2">
+    <div *ngFor="let alambre of alambres" class="col-sm-12 col-md-6 col-lg-4">
+      <div class="card tarjeta">
+        <img
+          src="{{ alambre.urlImg }}"
+          class="card-img-top"
+          alt="Tacos deliciosos"
+        />
+        <div class="card-body">
+          <h5 class="card-title">{{ alambre.nombre }}</h5>
+          <p class="card-text">{{ alambre.descripcion }}</p>
+          <figure class="text-end">
+            <figcaption class="blocquote-footer">
+              <p class="btn btn-primary">$ {{ alambre.precio }}</p>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Fin: Tarjeta tortas -->
+
+</div>
+
+<app-footer></app-footer>
